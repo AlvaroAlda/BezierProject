@@ -13,13 +13,11 @@ public static class BezierService
 
         //Resulting direct formula for Quadratic Bezier Curve
         //B(t) = (1 - t) ((1 - t) P0 + t P1) + t ((1 - t) P1 + t P2) 
-        t = Mathf.Clamp01(t);
+        t = Mathf.Clamp01(t); //Clamped between 0-1
         float oneMinusT = 1f - t;
 
         return
-            oneMinusT * oneMinusT * p0 +
-            2f * oneMinusT * t * p1 +
-            t * t * p2;
+            oneMinusT * oneMinusT * p0 + 2f * oneMinusT * t * p1 + t * t * p2;
     }
 
     public static Vector3 GetFirstDerivative(Vector3 p0, Vector3 p1, Vector3 p2, float t)

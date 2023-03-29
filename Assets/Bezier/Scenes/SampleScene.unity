@@ -301,6 +301,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1375704774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375704776}
+  - component: {fileID: 1375704775}
+  m_Layer: 0
+  m_Name: CoinsDecorator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1375704775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375704774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bfaa4e84a69294d9c6ea752e450d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 2056558146}
+  frequency: 50
+  lookForward: 1
+  items:
+  - {fileID: 5339005015664434741, guid: 437084f5b799ff14284321ef164d96b7, type: 3}
+--- !u!4 &1375704776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375704774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056558145
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,9 +389,9 @@ MonoBehaviour:
   - {x: 4.2990217, y: 0, z: 0.19708003}
   - {x: 2.251661, y: 0, z: -0.052961823}
   - {x: 0.944957, y: 0, z: -0.21254812}
-  - {x: 0.36624786, y: 2.1203878, z: -1.9961277}
+  - {x: 0.02457441, y: 0.86363786, z: -1.9961276}
   - {x: -0.046787262, y: 0, z: -3.7952607}
-  - {x: -0.14600223, y: -0.50933737, z: -4.2274294}
+  - {x: -0.07091944, y: -0.29205394, z: -4.4036684}
   - {x: 3.6055806, y: 0, z: -9.282561}
   - {x: 4.6106687, y: 0, z: -7.5534587}
   stepsPerCurve: 10
@@ -355,7 +404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056558145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.78, y: 0, z: 4.05}
+  m_LocalPosition: {x: -3.13, y: 0, z: 4.8}
   m_LocalScale: {x: 3.3246, y: 3.3246, z: 3.3246}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 334930866514414149, guid: 9b39aa032040e69488517719c20cef03, type: 3}
       propertyPath: mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 334930866514414149, guid: 9b39aa032040e69488517719c20cef03, type: 3}
       propertyPath: spline
