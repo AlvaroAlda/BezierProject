@@ -14,8 +14,6 @@ public class SplineWalker : MonoBehaviour
 
     private void Update () 
     {
-        progress += Time.deltaTime / duration;
-        
         if (goingForward) 
         {
             progress += Time.deltaTime / duration;
@@ -36,7 +34,8 @@ public class SplineWalker : MonoBehaviour
         else 
         {
             progress -= Time.deltaTime / duration;
-            if (progress < 0f) {
+            if (progress < 0f) 
+            {
                 progress = -progress;
                 goingForward = true;
             }

@@ -3,7 +3,7 @@ using UnityEngine;
 //https://catlikecoding.com/unity/tutorials/curves-and-splines/
 /// ////////////////////////////////////////////////////////////
 
-public static class Bezier
+public static class BezierService
 {
     /////////////////////////////////// QUADRATIC  ///////////////////////////////////////////////////////////
     public static Vector3 GetPoint(Vector3 p0, Vector3 p1, Vector3 p2, float t)
