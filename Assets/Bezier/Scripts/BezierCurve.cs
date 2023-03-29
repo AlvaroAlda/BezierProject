@@ -9,10 +9,10 @@ public class BezierCurve : MonoBehaviour
     {
         points = new Vector3[]
         {
-            new Vector3(1, 0, 0),
-            new Vector3(2, 0, 0),
-            new Vector3(3, 0, 0),
-            new Vector3(4, 0, 0),
+            new(1, 0, 0),
+            new(2, 0, 0),
+            new(3, 0, 0),
+            new(4, 0, 0),
         };
     } 
 
@@ -21,7 +21,7 @@ public class BezierCurve : MonoBehaviour
         return transform.TransformPoint(Bezier.GetPoint(points[0], points[1], points[2], points[3], t));
     }
 
-    public Vector3 GetVelocity (float t)
+    private Vector3 GetVelocity (float t)
     {
         return transform.TransformPoint(Bezier.GetFirstDerivative(points[0], points[1], points[2], points[3], t)) - transform.position;
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,11 +7,7 @@ public class BezierCurveInspector : Editor
 	private BezierCurve curve;
 	private Transform handleTransform;
 	private Quaternion handleRotation;
-
-    public override void OnInspectorGUI()
-    {
-        base.OnInspectorGUI();
-    }
+	
 
     private void OnSceneGUI()
 	{
